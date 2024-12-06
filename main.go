@@ -62,7 +62,7 @@ func main() {
 	r.HandleFunc("/books/{id}", handler.DeleteBook).Methods("DELETE")
 
 	// Add Swagger endpoint
-	r.PathPrefix("/swagger/").Handler(httpSwagger.WrapHandler)
+	r.PathPrefix("").Handler(httpSwagger.WrapHandler)
 
 	// Start the server
 	log.Println("Server is running on port 8080")

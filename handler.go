@@ -12,10 +12,10 @@ import (
 
 // Book struct to model the data
 type Book struct {
-	ID     int    `json:"id"`
+	ID     uint32 `json:"id"`
 	Title  string `json:"title"`
 	Author string `json:"author"`
-	Year   int    `json:"year"`
+	Year   uint16 `json:"year"`
 }
 
 // BookHandler struct that will hold the DB connection and handlers
